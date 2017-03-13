@@ -9,8 +9,7 @@ namespace XNATankGame
     public interface ITank
     {
         double Angle { get; }
-        int X { get; }
-        int Y { get; }
+        NetworkPoint[] BoundingRect { get; }
 
         NetworkPoint[] Vertices { get; } 
     }
